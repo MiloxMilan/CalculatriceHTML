@@ -1,0 +1,74 @@
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////By Milox (MIlan)////////////////
+//https://github.com/MiloxMilan/calcultriceHTML ///
+///////////////////////////////////////////////////
+
+* {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #15172C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, h2 {
+    color: #0D99FF;
+    margin: 10px 0;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.display {
+    grid-column: 1 / -1;
+    background-color: #0D99FF;
+    border-radius: 0.4em;
+    padding: 10px;
+    font-size: 24px;
+    color: #15172C;
+    text-align: right;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+button {
+    border: none;
+    border-radius: 0.4em;
+    padding: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    height: 60px;
+}
+
+    button:hover {
+        background-color: #0D99FF;
+    }
+
+.equal {
+    grid-column: span 2;
+    background-color: #0D99FF;
+    color: #15172C;
+    font-weight: bold;
+}
